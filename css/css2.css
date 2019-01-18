@@ -1,0 +1,70 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF;
+}
+
+.zhuti-1 {
+	margin: 0 auto;
+	width: 1100px;
+	height: 1350px;
+}
+
+.zhuti-1 h4 {
+	font-weight: 200;
+}
+
+.zhuti-1 p {
+	font-size: 14px;
+	color: #808080;
+}
+
+.zhuti-1 li {
+	list-style: none;
+	color: #808080;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.zhuti-1 span {
+	color: #808080;
+}
+
+.box--1 {
+	position: relative;
+	margin-top: 40px;
+	width: 1100px;
+	height: 360px;
+}
+
+.box--1 ul {
+	position: absolute;
+	top: 50px;
+	left: 600px;
+}
+
+.box--2 {
+	position: relative;
+	margin-top: 50px;
+}
+
+.box--2 img {
+	position: absolute;
+	top: 0px;
+	left: 600px;
+}
+
+.box--2 ul {
+	position: absolute;
+	top: 50px;
+}
+
+.box--3 {
+	position: relative;
+	top: 400px;
+}
+.box--3 ul {
+	position: absolute;
+	top: 80px;
+	left: 600px;
+}

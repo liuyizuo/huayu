@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/css5.css" />
+	</head>
+	<header></header>
+	<body>
+	<div class="zhuti-4">
+		
+		<h4>当前位置：主页 >新闻中心</h4>
+		       	<h1>[新闻动态]奶茶有哪些奶茶成分对人体有害</h1>
+		       	 <h2>2019-08-17</h2>
+		       	 <p>现在人食品安全问题是越来越在意了，不过也是，老是有些这样的食品安全新闻被曝光出来，谁看了都谁觉得不安。但是现在又有很多人在议论，奶茶也有一些成分对人有害，这是真的么?那么奶茶成分真的对人体有害吗?<br>1、糖精、奶精、香精。这三种劣质原物料是很多无良的小型奶茶店为了节约成本就会使用的奶茶成分。它主要成分有氢化植物油、乳化剂、抗结剂以及酪蛋白酸钠。其中氢化植物油是反式脂肪酸中的一种，它会升高血清总胆固醇、血清总脂和低密度脂蛋白胆固醇，一杯500毫升的奶茶中所含有的反式脂肪酸，是人体所不能承受的。.<br>奶茶有哪些奶茶成分对人体有害<br>2、果味粉。劣质果味粉是由色素、香精、甜蜜素以及粘稠剂等劣质原材料混合而成的，并非是新鲜水果制作而成的。其实它的味道和真正的果汁味道是不一样的，会过分的甜或者酸。如果人体过量地吸收这些物质，将会对肝、肾产生巨大的影响，最严重的可能还回产生致癌物质，影响到人们的身体健康。<br>3、甜蜜素。甜蜜素的价格低廉，这是很多奶茶小贩都会进购奶茶成分之一，俗称蜂蜜水。甜蜜素是任红合成的甜味剂，使用过量会对人体的肝脏和神经系统造成危害，尤其是老人、小孩、孕妇这类代谢能力较弱的群体产生的副作用将会更加明显。<br>以上就是小编要说的关于那些对人体有害的奶茶成分，但是，大部分的奶茶店，正规的品牌都不会使用以上原料，只有一些不良商家才会使用。要想不踩雷，就尽量不要去买一些不知名的品牌，或者是去一些小店铺。
+  </p>
+	</div>
+	<footer></footer>
+	<script type="text/javascript">
+		
+	
+		function ajax(method, url, data, fn) {
+				let htp = null;
+				try {
+					htp = new XMLHttpRequest()
+				} catch (err) {
+					htp = new ActiveXObject("Microsoft.XMLHTTP")
+				}
+				if (method == "get") {
+					htp.open(method, url + "?" + data);
+					htp.send()
+				} else {
+					htp.open(method, url);
+					htp.setRequestHeader('content-type', 'application/x-www-form-urlencoded');
+					htp.send(data)
+				}
+				htp.onreadystatechange = function() {
+					if (htp.readyState == 4 && htp.status == 200) {
+						fn(htp.responseText)
+					}
+				}
+			}
+			     
+                let kk=window.location.search.substring(1,);     
+      var odiv=document.getElementsByClassName("zhuti-4")[0];
+        ajax("get","css/json.json","",function(data){
+      let  dapr=JSON.parse(data);
+      console.log(dapr)
+       
+      	odiv.innerHTML=`
+      	 <h4>当前位置：主页 >新闻中心</h4>
+		       	<h1>${dapr[kk].h1}</h1>
+		       	 <h2>${dapr[kk].time}</h2>
+		       	 <p>${dapr[kk].p}</p>`
+      
+      })
+			</script>
+				<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+$('header').load('index.html')
+$('footer').load('footer.html')
+	</script>
+	</body>
+</html>

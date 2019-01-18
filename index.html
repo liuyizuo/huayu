@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/css.css" />
+	</head>
+	
+	<body>
+		<!--导航栏-->
+		<div class="box-1">
+				<div class="zhuti--1">
+					<img src="http://www.peachhouse.cn/img/LOGO.png"/>
+				</div>
+				<ul>
+					<li class="a-1"><a href="http://127.0.0.1:8020/huayu/new_file.html">首页</a></li>
+					<li><a href="http://127.0.0.1:8020/huayu/women.html">关于我们</a></li>
+					<li><a href="http://127.0.0.1:8020/huayu/zhanshi.html">产品展示</a></li>
+					<li><a href="http://127.0.0.1:8020/huayu/jiameng.html">加盟中心</a></li>
+					<li><a href="http://127.0.0.1:8020/huayu/relationme.html">联系我们</a></li>
+				</ul>
+		</div>
+		<!--轮播图-->
+		<div class="box">
+			<ul>
+				
+			    <li><img src="img/05bg-1.png"/></li>
+				<li><img  src="img/02bg-1.png"/></li>
+				<li><img src="img/index_bg.png"/></li>
+				<li><img src="img/03bg-1.png"/></li>
+				<li><img src="img/04bg-1.png"/></li>
+				<li><img src="img/05bg-1.png"/></li>
+				<li><img  src="img/02bg-1.png"/></li>
+				
+				
+			</ul>
+			<div class="but1"><</div>
+			<div class="but2">>
+				
+			</div>
+			
+		</div>
+		<!--下面小点-->
+		<div class="dian">
+			<ul>
+				<li id="li-1"></li>
+				 <li></li>
+				 <li></li>
+				 <li></li>
+				 <li></li>
+			</ul>
+			</div>
+			
+		<script type="text/javascript">
+			let oul=document.getElementsByClassName("box")[0].getElementsByTagName("ul")[0]
+			let oli=document.getElementsByClassName("box")[0].getElementsByTagName("li")[0]
+			let  but1=document.getElementsByClassName("but1")[0]
+			let but2=document.getElementsByClassName("but2")[0]
+			let  OLI=document.getElementsByClassName("dian")[0].getElementsByTagName("li")
+		
+			let a=1
+			let win=100;
+			var i=0
+			let w=true
+			
+			but2.onclick=function(){
+//				console.log(2);
+				if (w) { 
+					w = false
+				a++
+				i++
+//				console.log(i)
+			
+				if(i==OLI.length){i=0}
+				for(let k=0;k<OLI.length;k++){OLI[k].id=""}
+				OLI[i].id="li-1"
+				
+				
+				oul.style.left=-(a)*win+"%"
+				oul.style.transition="1s"
+				setTimeout(function(){
+					w = true
+					if(oul.style.left==-win*6+"%"){
+						a = 1;
+						oul.style.left = -1 * win + "%";
+						oul.style.transition = "";
+					}
+				},1000);
+				}
+				setTimeout(w, 1000)
+			}
+			
+			but1.onclick=function (){
+//			console.log(i+" ")
+				if (w) { 
+//						console.log(1)
+					w = false
+				a--;
+				
+				i=i-1
+				if(i<0){i=4}
+				for(let k=0;k<OLI.length;k++){OLI[k].id=""}
+				OLI[i].id="li-1"	
+				
+				oul.style.left=-a*win+"%"
+				oul.style.transition="1s"
+//				console.log(oul.style.left)
+				setTimeout(function(){
+					if(oul.style.left==0+"%"){
+						a = 5
+						oul.style.left = -5 * win + "%";
+						oul.style.transition = "";
+					}
+						w = true
+				},1000);
+				}
+				setTimeout(w, 1000)
+				
+			}
+			
+			
+			let Oli=document.getElementsByClassName("box-1")[0].getElementsByTagName("li")
+			for( y=0;y<Oli.length;y++){
+				Oli.length=y;
+			Oli[y].onmouseover=function(){
+//				console.log(i)
+				if(y>0){
+				this.style.backgroundColor=" rgba(0, 0, 0, 0.3)"
+				}
+			}
+			
+//
+//
+//
+			Oli[y].onmouseout=function(){
+				
+				if(y>0){
+				this.style.backgroundColor=" rgba(0, 0, 0, 0)"
+				}
+			}
+			}	
+			
+			for(let n=0;n<OLI.length;n++){
+		
+				OLI[n].onmouseover=()=>{
+						oul.style.left = -(n-1+2) * win + "%";
+						oul.style.transition="1s"
+						console.log(n)
+//						console.log(a)
+						i=n
+						
+					for(let k=0;k<OLI.length;k++){OLI[k].id=""}
+				OLI[n].id="li-1"
+				}}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+footer{
+	background-color:grey;
+	height :25.125rem;
+	margin-top: 0rem;
+}
+footer .center{
+	padding-top: 4.6875rem;
+}
+footer ul{
+	
+	float: left;
+}
+footer li{
+	display: list-item;
+	list-style: none;
+	margin-bottom: 1rem;
+}
+footer .center>div{
+	float: right;
+}
+footer .footerleft{
+	float: left;
+}
+footer li:after{
+	content: "";
+	display: inline-block;
+	clear: both;
+}
+footer section{
+	width: 24rem;	
+}
+footer section>h5{
+	font-weight: normal;
+}
+footer a{
+	color: #252525;
+}
+footer .center>div img{
+	color:black;
+	margin-bottom: 1rem;
+}

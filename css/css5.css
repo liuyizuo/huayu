@@ -1,0 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.zhuti-4 {
+	margin: 0 auto;
+	width: 1100px;
+	height: 800px;
+	
+}
+.zhuti-4 h4{font-weight: 200;}
+.zhuti-4 h1{margin-top: 50px;
+	margin-left:25% ;}
+	.zhuti-4 h2{margin-top: 50px;
+	margin-left:45% ;}
+	.zhuti-4 p{font-size: 25px;}

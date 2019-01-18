@@ -1,0 +1,287 @@
+.box-2 {
+	position: relative;
+	left: 50%;
+	margin-left: -550px;
+	width: 1100px;
+}
+
+.logo-1 {
+	position: absolute;
+	left: 200px;
+}
+
+.box-3 {
+	position: absolute;
+	top: 75px;
+	width: 1100px;
+	height: 328px;
+	background: url(../img/flowerbgcolor.png)
+}
+
+.box-3 img {
+	margin: 20px;
+	margin-top: 28px;
+}
+
+.box-3 p {
+	position: absolute;
+	left: 450px;
+	top: 10px;
+	width: 112px;
+	height: 48px;
+	background: #646464;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	line-height: 48px;
+}
+
+.box-3 ul {
+	position: absolute;
+	left: 410px;
+	top: 80px;
+	width: 605px;
+	z-index: 5;
+	list-style: none;
+}
+
+.box-4 {
+	position: relative;
+	top: 450px;
+	margin: 0 auto;
+	width: 1100px;
+	height: 680px;
+}
+
+#tu1 {
+	position: absolute;
+	left: 120px;
+}
+
+.zuimei li {
+	position: absolute;
+	left: 0px;
+	top: 30px;
+	width: 400px;
+	height: 50px;
+	text-align: center;
+	list-style: none;
+	font-size: 20px;
+	line-height: 50px;
+}
+
+#tu2 {
+	position: absolute;
+	top: 30px;
+	width: 390px;
+}
+
+#tu3 {
+	position: absolute;
+	top: 75px;
+}
+
+.zuimeitu {
+	position: absolute;
+	left: 400px;
+}
+
+#tu4 {
+	margin-top: 10px;
+}
+
+#tu5 {
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.box-5 {
+	position: relative;
+	top: 505px;
+	width: 1100px;
+	height: 380px;
+	margin: 0 auto;
+}
+
+.box-5 p {
+	text-align: center;
+	font-size: 26px;
+}
+
+.box-5 a {
+	width: 70px;
+	display: inline-block;
+	text-decoration: none;
+	color: blue;
+	background: #646464;
+}
+
+#tu-1 {
+	position: absolute;
+	left: 50%;
+	top: 20px;
+	margin-left: -161px;
+}
+
+.box-5 img {
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+.box-5 span {
+	position: absolute;
+	left: 50%;
+	margin-left: -136px;
+}
+
+.box-6 {
+	position: relative;
+	top: 500px;
+	margin: 0 auto;
+	width: 1100px;
+	height: 590px;
+}
+
+.tu-1 {
+	position: absolute;
+	left: 50%;
+	margin-left: -352px;
+}
+
+.zhuti {
+	position: absolute;
+	top: 100px;
+	width: 1100px;
+	height: 360px;
+	overflow: hidden
+}
+
+.zhuti img {
+	width: 506px;
+	height: 360px;
+}
+
+.zhuti ul {
+	position: absolute;
+	left: 1px;
+	width: 3300px;
+}
+
+.zhuti li {
+	width: 500px;
+	margin: 16px;
+	height: 360px;
+	display: inline-block;
+}
+
+.yuan {
+	position: absolute;
+	top: 470px;
+	left: 50%;
+	margin-left: -130px;
+}
+
+.yuan li {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #646464;
+	display: inline-block;
+	margin: 20px;
+}
+
+#li-2 {
+	background: black;
+}
+
+.yinying {
+	position: absolute;
+	top: 15px;
+	width: 440px;
+	height: 300px;
+	margin: 30px;
+	background-color: rgba(120, 120, 120, 0.7);
+}
+
+.yinying span {
+	display: inline-block;
+	width: 300px;
+	color: white;
+	font-size: 14px;
+	margin-left: 20px;
+}
+
+.yinying a {
+	display: block;
+	font-size: 14px;
+	color: white;
+	width: 300px;
+	text-decoration: none;
+	margin-top: 5px;
+	margin-left: 20px;
+	border-bottom: 1px dashed white;
+}
+
+.box-7 {
+	position: relative;
+	left: 50%;
+	margin-left: -550px;
+	top: 500px;
+	width: 1100px;
+	/*height: 800px;*/
+	display: block;
+	clear:both;
+	
+}
+
+.tu-2 {
+	position: absolute;
+	left: 50%;
+	margin-left: -350px;
+}
+
+.liebiao {
+	position: absolute;
+	left: 10px;
+	top: 130px;
+	width: 520px;
+	height: 370px;
+}
+
+.liebiao a {
+	color: black;
+	text-decoration: none;
+}
+
+.liebiao li {
+	list-style: none;
+	border-bottom: 1px dashed black;
+}
+
+.liebiao p {
+	font-size: 10px;
+}
+
+.tu-3 {
+	position: absolute;
+	left: 550px;
+	top: 140px;
+}
+
+.zi-1 {
+	position: absolute;
+	left: 50px;
+	top: 180px;
+	width: 481px;
+	height: 200px;
+	background-color: rgba(120, 120, 120, 0.7);
+}
+
+.zi-1 {
+	color: white;
+	font-size: 14px;
+}
+body>footer{
+	    margin-top: 66rem;
+}
